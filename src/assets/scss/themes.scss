@@ -1,0 +1,36 @@
+// 淺色主題
+body.light {
+    --background-light: rgb(255, 255, 255);     // 淡背景色
+    --background-normal: rgb(245, 245, 245);    // 背景色
+    --background-dark: rgb(235, 235, 235);      // 深背景色
+
+    --theme-h: 200; // 色相
+
+    --primary-color-light:  hsla(var(--theme-h), 100%, 60%, 100%);      // 淡主色
+    --primary-color-normal: hsla(var(--theme-h), 100%, 50%, 100%);      // 主色
+    --primary-color-dark: hsla(var(--theme-h), 100%, 40%, 100%);        // 深主色
+
+    --secondary-color-light:  hsla(var(--theme-h), 80%, 100%, 100%);    // 淡副色
+    --secondary-color-normal: hsla(var(--theme-h), 70%, 85%, 100%);     // 副色
+    --secondary-color-dark: hsla(var(--theme-h), 60%, 75%, 100%);       // 深副色
+
+    --text-color: #333; // 文字顏色
+}
+
+body.dark {
+    --background-light: rgb(255, 255, 255);
+    --background-normal: rgb(245, 245, 245);
+    --background-dark: rgb(235, 235, 235);
+
+    // --color-normal: rgb(33, 105, 169);
+    --theme-h: 200;
+    --primary-color-light:  hsla(var(--theme-h), 100%, 60%, 100%);
+    --primary-color-normal: hsla(var(--theme-h), 100%, 50%, 100%);
+    --primary-color-dark: hsla(var(--theme-h), 100%, 40%, 100%);
+
+    --secondary-color-light:  hsla(var(--theme-h), 80%, 100%, 100%);
+    --secondary-color-normal: hsla(var(--theme-h), 70%, 85%, 100%);
+    --secondary-color-dark: hsla(var(--theme-h), 60%, 75%, 100%);
+
+    --text-color: #333;
+}

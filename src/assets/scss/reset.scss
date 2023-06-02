@@ -1,0 +1,34 @@
+body, div, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    overflow: hidden;
+}
+
+#app {
+    @include background-light;
+    width: 100vw;
+    height: 100vh;
+    color: var(--text-color);
+    overflow: hidden;
+    user-select: none;
+    touch-action: none;
+    font-family: 'Microsoft Yahei', Arial, Helvetica, sans-serif;
+    line-height: var(--small-font-size);
+    font-size: var(--small-font-size);
+}
+
+input {
+    color: var(--text-color);
+}
+
+.icon {
+    width: $icon-size;
+    height: $icon-size;
+}
+
+.clickable {
+    @include clickable;
+}

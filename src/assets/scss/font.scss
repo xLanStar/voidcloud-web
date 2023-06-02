@@ -1,0 +1,13 @@
+body {
+    --small-font-size: 1.2rem;
+    --medium-font-size: 1.4rem;
+
+    @media (min-width: 600px) and (max-width: 1200px) {
+        --small-font-size: calc(1.2rem + 0.1 * ((100vw - 600px) / 600));
+        --medium-font-size: calc(1.4rem + 0.1 * ((100vw - 600px) / 600));
+    }
+    @media (min-width: 1200px) {
+        --small-font-size: 1.3rem;
+        --medium-font-size: 1.6rem;
+    }
+}

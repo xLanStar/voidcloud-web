@@ -1,0 +1,105 @@
+@mixin clickable {
+    cursor: pointer;
+}
+
+// flex
+@mixin flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+// 
+@mixin round-border {
+    border-radius: .5rem;
+}
+
+
+// shadow
+@mixin border-shadow {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+@mixin dark-border-shadow {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+@mixin float-shadow {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+
+// background
+@mixin background-light {
+    background-color: var(--background-light);
+}
+
+@mixin background-normal {
+    background-color: var(--background-normal);
+}
+
+@mixin background-dark {
+    background-color: var(--background-dark);
+}
+
+
+// primary
+@mixin primary-background-light {
+    background-color: var(--primary-color-light);
+}
+
+@mixin primary-background-normal {
+    background-color: var(--primary-color-normal);
+}
+
+@mixin primary-background-dark {
+    background-color: var(--primary-color-dark);
+}
+
+@mixin hover-primary-background {
+    &:hover {
+        background-color: var(--primary-color-normal)
+    }
+}
+
+@mixin focus-primary-background {
+    &:focus {
+        background-color: var(--primary-color-normal)
+    }
+}
+
+
+// secondary
+@mixin secondary-background-light {
+    background-color: var(--secondary-color-light);
+}
+
+@mixin secondary-background-normal {
+    background-color: var(--secondary-color-normal);
+}
+
+@mixin secondary-background-dark {
+    background-color: var(--secondary-color-dark);
+}
+
+@mixin hover-secondary-background {
+    &:hover {
+        background-color: var(--secondary-color-normal)
+    }
+}
+
+@mixin focus-secondary-background {
+    &:focus {
+        background-color: var(--secondary-color-normal)
+    }
+}
