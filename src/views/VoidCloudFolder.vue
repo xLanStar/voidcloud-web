@@ -1,5 +1,5 @@
 <script setup>
-import { onBeforeMount, onBeforeUnmount, ref } from 'vue';
+import { ref } from 'vue';
 import { onBeforeRouteUpdate, useRoute, useRouter } from 'vue-router';
 import FileItem from '../components/FileItem.vue';
 import SvgIcon from '../components/SvgIcon.vue';
@@ -151,15 +151,6 @@ const onMouseUpExplorer = () => {
 
 
 onBeforeRouteUpdate(to => StorageHelper.client && viewFolder(to.params.folder.join("/")));
-
-onBeforeMount(() => {
-	// window.addEventListener('click', unselect);
-	// window.addEventListener('contextmenu', unselect);
-})
-onBeforeUnmount(() => {
-	// window.removeEventListener('click', unselect);
-	// window.removeEventListener('contextmenu', unselect);
-})
 
 StorageHelper.client && viewFolder(route.params.folder.join("/"));
 </script>
