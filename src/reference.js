@@ -1,4 +1,4 @@
-export const BASE_URL = true ? 'http://voidcloud.net' : '';
+export const BASE_URL = true ? 'https://voidcloud.net' : '';
 
 export const STORAGE_URL = `${BASE_URL}:8080`;
 
