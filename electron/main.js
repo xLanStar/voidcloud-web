@@ -1,15 +1,28 @@
-import { app, BrowserWindow } from 'electron';
+import { app, BrowserWindow, Menu } from 'electron';
 
 const createWindow = () => {
-    const win = new BrowserWindow({
+    const window = new BrowserWindow({
         title: 'VoidCloud',
-        autoHideMenuBar: true,
+        // autoHideMenuBar: true,
     })
 
+    window.setMenu(Menu.buildFromTemplate([
+        {
+            label: '工具',
+            submenu: [
+                {
+                    label: "開發工具",
+                    accelerator: 'F12',
+                    click: () => window.webContents.toggleDevTools()
+                }
+            ]
+        }
+    ]))
+
     if (process.env.VITE_DEV_SERVER_URL) {
-        win.loadURL(process.env.VITE_DEV_SERVER_URL)
+        window.loadURL(process.env.VITE_DEV_SERVER_URL)
     } else {
-        win.loadFile('dist/index.html');
+        window.loadFile('dist/index.html');
     }
 };
 
