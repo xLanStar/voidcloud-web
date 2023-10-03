@@ -52,7 +52,7 @@ const onSubmit = async () => {
 <template>
 	<div id="login">
 		<div id="login-header">
-			{{ isRegister ? "建立新帳號" : "iBox 雲端" }}
+			{{ isRegister ? "建立新帳號" : "VoidCloud 雲端" }}
 		</div>
 		<div id="login-content" @keypress.enter="onSubmit">
 			<InputBox v-if="isRegister" icon="Name" placeholder="名稱" :value="name"
