@@ -25,7 +25,7 @@ const onClickFold = e => {
                 <SvgIcon class="foldertile-fold clickable" :color="SVG_ICON_COLOR_PRIMARY" icon="RArrow" @click.stop="onClickFold" />
             </template>
         </LinkTile>
-        <div v-if="folder && folder.subFolders" class="subfolder-list">
+        <div v-if="folder?.subFolders" class="subfolder-list">
             <FolderLinkTile v-for="(subFolder, id) in folder.subFolders" :key="id"
                 :to="{ name: 'Box-Folder' }" :icon="icon" :text="subFolder.name" />
         </div>

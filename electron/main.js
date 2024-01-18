@@ -3,7 +3,6 @@ import { app, BrowserWindow, Menu } from 'electron';
 const createWindow = () => {
     const window = new BrowserWindow({
         title: 'VoidCloud',
-        // autoHideMenuBar: true,
     })
 
     window.setMenu(Menu.buildFromTemplate([

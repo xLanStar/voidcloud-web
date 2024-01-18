@@ -1,4 +1,6 @@
-body, div, p {
+body,
+div,
+p {
     margin: 0;
     padding: 0;
 }
@@ -15,7 +17,7 @@ body {
     overflow: hidden;
     user-select: none;
     touch-action: none;
-    font-family: 'Microsoft Yahei', Arial, Helvetica, sans-serif;
+    font-family: "Microsoft Yahei", Arial, Helvetica, sans-serif;
     line-height: var(--small-font-size);
     font-size: var(--small-font-size);
 }

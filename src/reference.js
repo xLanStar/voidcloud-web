@@ -3,7 +3,6 @@ export const BASE_URL = true ? 'https://voidcloud.net' : '';
 export const STORAGE_URL = `${BASE_URL}:8080`;
 
 /* 不指定網域(Release) */
-// const API_URL = 'api/';
 /* 指定網域(Debug) */
 export const API_URL = `${BASE_URL}/api`
 
@@ -27,8 +26,8 @@ export const NotificationType = {
 };
 export const NotificationTypeMap = [NotificationType.Information, NotificationType.Success, NotificationType.Warning, NotificationType.Error, NotificationType.Custom]
 
-export const AccountValidator = /^[A-Za-z0-9]*$/i;
-export const EmailValidator = /^\w+((-\w+)|(\.\w+))*@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/i;
+export const AccountValidator = /^\w*$/i;
+export const EmailValidator = /^\w+((-\w+)|(\.\w+))*@\w+((\.|-)\w+)*\.[A-Za-z]+$/i;
 
 export const SVG_ICON_COLOR_PRIMARY = "var(--primary-color-dark)";
 export const SVG_ICON_COLOR_SECONDARY = "var(--secondary-color-dark)";
