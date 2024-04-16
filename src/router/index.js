@@ -21,6 +21,7 @@ const routes = [
               ? { name: "VoidCloud-Folder", params: { folder: ["drive"] } }
               : { name: "Login" };
           const path = folder?.join("/") || "/drive/";
+          console.log("path", path);
           StorageHelper.client.setHeaders({
             ...StorageHelper.client.getHeaders(),
             ...(to.query.folder && { Folder: to.query.folder }),

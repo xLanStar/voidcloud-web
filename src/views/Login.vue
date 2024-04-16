@@ -38,11 +38,9 @@ const onSubmit = async () => {
     if (!password.value) {
       return Notification.info({ message: "請輸入密碼" });
     }
-    const result = await login(account.value, password.value);
-    if (!result) {
-      return;
-    }
-    router.push({ name: "VoidCloud" });
+    login(account.value, password.value).then(() => {
+      router.push({ name: "VoidCloud" });
+    });
   }
 };
 </script>
